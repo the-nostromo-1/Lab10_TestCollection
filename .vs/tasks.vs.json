@@ -1,0 +1,15 @@
+{
+  "version": "0.2.1",
+  "tasks": [
+    {
+      "taskLabel": "task-testCollection",
+      "appliesTo": "testCollection.cpp",
+      "type": "launch"
+    },
+    {
+      "taskLabel": "task-Lab10_TestCollection",
+      "appliesTo": "/",
+      "type": "launch"
+    }
+  ]
+}
