@@ -28,7 +28,6 @@ int main() {
 
 	cout << "Collection value: " << value(a, size) << endl;
 
-
 	// asking user to input a number
 	cout << "Input number to find in the collection: ";
 	double number;
@@ -69,7 +68,7 @@ void output(const double* colPtr, const int size) {
 }
 
 double value(const double* colPtr, const int size) {
-	double new_value;
+	double new_value = 0.0;
 	for (int i = 0; i < size; ++i) {
 		new_value += colPtr[i];
 	}
@@ -104,7 +103,7 @@ void removeNumber(double*& colPtr, const double number, int& size) {
 	bool found = false;
 	--size;
 	double* tmp = new double[size];
-	for (int i = 0; i < size; ++i) {
+	for (int i = 0; i < size + 1; ++i) {
 		if (colPtr[i] == number) {
 			found = true;
 		}
