@@ -119,16 +119,3 @@ void removeNumber(double*& colPtr, const double number, int& size) {
 	delete[] colPtr;
 	colPtr = tmp;
 }
-
-// int index_check_2 = check(*&colPtr, number, size);
-// if (index_check_2 == check(*&colPtr, number, size)) {
-//    --size;
-//    double *tmp_2 = new double [size];
-//    for (int i = 0; i < size; ++i) {
-//       if (colPtr[i] != number) {
-//          tmp_2[i] = colPtr[i];
-//       }
-//    }
-//    delete [] colPtr;
-//    colPtr = tmp_2;
-// }
